@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ie.Lab1Id</groupId>
+  <artifactId>mvnLab1Proj</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <properties>
+     <maven.compiler.source>1.8</maven.compiler.source>
+     <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  <dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			 <exclusions>
+		        <exclusion>
+		            <groupId>oie.Lab1Id</groupId>
+		            <artifactId>mvnLab1Proj</artifactId>
+		        </exclusion>
+		        <exclusion>
+		            <groupId>ie.Lab1Id</groupId>
+		            <artifactId>mvnLab1Proj</artifactId>
+		        </exclusion>
+		    </exclusions>
+		</dependency>
+		
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<release>15</release>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>  
+  <name>Lab1</name>
+</project>
